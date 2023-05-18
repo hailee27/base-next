@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "postinstall": "husky install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "lint-eslint": "eslint --ext ts,tsx src/",
     "lint:fix": "eslint --fix --ext ts,tsx src/",
-    "prettier": "prettier --check \"src/**/(*.tsx|*.ts|*.scss|*.css)\"",
+    "prettier": "prettier --check .",
     "prettier:fix": "prettier --write \"src/**/(*.tsx|*.ts|*.scss|*.css)\""
   },
   "dependencies": {
@@ -27,6 +28,7 @@
   "devDependencies": {
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
     "prettier": "^2.8.3"
   }
 }
