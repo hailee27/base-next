@@ -1,0 +1,58 @@
+.lantern {
+  position: relative;
+  width: 150px;
+  height: 350px;
+  animation: sway2 5s infinite;
+}
+.lanternSmall {
+  position: relative;
+  width: 100px;
+  height: 280px;
+  animation: sway 4s infinite;
+}
+.cloud {
+  position: relative;
+  width: 120px;
+  height: 60px;
+  animation: cloud 4s infinite;
+}
+@media (max-width: 768px) {
+  .lantern {
+    width: 60px;
+    height: 180px;
+  }
+  .lanternSmall {
+    width: 40px;
+    height: 130px;
+  }
+  .cloud {
+    width: 80px;
+    height: 30px;
+  }
+}
+
+@keyframes sway {
+  33% {
+    transform: rotate(6deg);
+    transform-origin: 4px 9px;
+  }
+  66% {
+    transform: rotate(-6deg);
+    transform-origin: 4px 9px;
+  }
+}
+@keyframes sway2 {
+  30% {
+    transform: rotate(4deg);
+    transform-origin: 5px 8px;
+  }
+  60% {
+    transform: rotate(-4deg);
+    transform-origin: 5px 8px;
+  }
+}
+@keyframes cloud {
+  50% {
+    transform: translateY(-12px);
+  }
+}
