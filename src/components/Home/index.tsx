@@ -28,14 +28,14 @@ function Home() {
       <section className={styles.invitation}>
         <Banner />
       </section>
-      <section className={styles.location}>
-        <div className="w-[80%] h-full">
-          <TemplateCard>
-            <Invitation />
-          </TemplateCard>
-        </div>
-        {/* <Invitation /> */}
-      </section>
+      {/* <section className={styles.location}> */}
+      <div className="md:w-[80%] w-full h-full">
+        <TemplateCard>
+          <Invitation />
+        </TemplateCard>
+      </div>
+      {/* <Invitation /> */}
+      {/* </section> */}
     </div>
   );
 }

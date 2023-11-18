@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Invitation() {
-  // const [form, setForm] = useState({
-  //   name: '',
-  //   appect: ''
-  // });
+  const [form, setForm] = useState({
+    name: '',
+    appect: true
+  });
   // entry.1807568969=Ng%E1%BB%8Dc+%C3%81nh&entry.338718565=0393962336&entry.105458791=C%C3%B3
   // 'entry.581823759': form.name,
   // 'entry.1600231485': form.appect
@@ -25,6 +25,7 @@ function Invitation() {
   //     console.log(e);
   //   }
   // }, [form]);
+  console.log(form);
   return (
     <div className="w-full bg-[#ffe3e3] min-h-screen flex flex-col items-center ">
       <div className="w-full flex flex-col px-[20px] flex-1 h-full">
@@ -42,12 +43,20 @@ function Invitation() {
           <span className="text-[30px]">Bạn sẽ đến chứ?</span>
           <div className="flex w-full ju">
             <div className="flex flex-1 items-center">
-              <input type="radio" />
+              <input
+                type="radio"
+                checked={form.appect}
+                onChange={() => setForm((prev) => ({ ...prev, appect: !prev.appect }))}
+              />
               <span className="text-[#870608] font-normal text-[24px]">Có</span>
             </div>
             <div className="flex flex-1 items-center">
-              <input type="radio" />
-              <span className="text-[#870608] font-normal text-[24px]">Có</span>
+              <input
+                type="radio"
+                checked={!form.appect}
+                onChange={() => setForm((prev) => ({ ...prev, appect: !prev.appect }))}
+              />
+              <span className="text-[#870608] font-normal text-[24px]">Không</span>
             </div>
           </div>
         </div>
