@@ -1,6 +1,7 @@
 import Home from '@/src/components/Home';
 import Head from 'next/head';
 import React from 'react';
+import { ToastContainer } from 'react-toastify';
 
 function index() {
   return (
@@ -15,6 +16,7 @@ function index() {
         ></meta>
       </Head>
       <Home />
+      <ToastContainer />
     </>
   );
 }

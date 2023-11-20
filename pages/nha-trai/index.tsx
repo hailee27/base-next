@@ -1,6 +1,7 @@
 import Home from '@/src/components/Home';
 import Head from 'next/head';
 import React from 'react';
+import { ToastContainer } from 'react-toastify';
 
 function CardWeddingPage() {
   return (
@@ -16,6 +17,7 @@ function CardWeddingPage() {
       </Head>
 
       <Home />
+      <ToastContainer />
     </>
   );
 }
