@@ -10,11 +10,7 @@ body {
   font-family: 'Lexend Deca', serif !important;
   overflow-x: hidden;
 }
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
+
 input {
   background-color: transparent;
   border-bottom: 1px solid #870608;
@@ -60,4 +56,10 @@ input[type='radio']::before {
 
 input[type='radio']:checked::before {
   transform: scale(1);
+}
+@media (max-width: 768px) {
+  input {
+    padding: 8px 0;
+    font-size: 24px;
+  }
 }

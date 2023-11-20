@@ -2,7 +2,7 @@ import Home from '@/src/components/Home';
 import Head from 'next/head';
 import React from 'react';
 
-function CardWeddingPage() {
+function index() {
   return (
     <>
       <Head>
@@ -14,10 +14,9 @@ function CardWeddingPage() {
           content="https://image.namtay.vn/fit/1200/images/wedsite/2QHhwLokHBIM8TjRuPGap9kZoBFgE6xtHhsPEnvJ.jpeg"
         ></meta>
       </Head>
-
       <Home />
     </>
   );
 }
 
-export default CardWeddingPage;
+export default index;

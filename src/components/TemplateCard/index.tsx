@@ -5,14 +5,26 @@ import styles from './index.module.scss';
 function TemplateCard({ children }: { children: React.ReactNode }) {
   return (
     <div className="relative min-h-screen">
-      <Image className={styles.topLeft} alt="icon" src="/images/shape.png" width={166} height={159} />
-      <Image className={styles.topRight} alt="icon" src="/images/shape.png" width={166} height={159} />
-      <Image className={styles.bottomLeft} alt="icon" src="/images/shape.png" width={166} height={159} />
-      <Image className={styles.bottomRight} alt="icon" src="/images/shape.png" width={166} height={159} />
-      {/* <div className={styles.upperLine}></div>
-      <div className={styles.leftLine}></div>
-      <div className={styles.rightLine}></div>
-      <div className={styles.bottomLine}></div> */}
+      <div className={styles.topLeft}>
+        <div className="relative md:w-[150px] md:h-[150px] w-[100px] h-[100px] ">
+          <Image alt="icon" fill={true} src="/images/shape.png" />
+        </div>
+      </div>
+      <div className={styles.topRight}>
+        <div className="relative md:w-[150px] md:h-[150px] w-[100px] h-[100px] ">
+          <Image alt="icon" src="/images/shape.png" fill={true} />
+        </div>
+      </div>
+      <div className={styles.bottomLeft}>
+        <div className="relative md:w-[150px] md:h-[150px] w-[100px] h-[100px] ">
+          <Image alt="icon" src="/images/shape.png" fill={true} />
+        </div>
+      </div>
+      <div className={styles.bottomRight}>
+        <div className="relative md:w-[150px] md:h-[150px] w-[100px] h-[100px] ">
+          <Image alt="icon" src="/images/shape.png" fill={true} />
+        </div>
+      </div>
       {children}
     </div>
   );
