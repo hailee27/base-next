@@ -88,7 +88,7 @@ function Home() {
                 <img src="/images/anh8.jpg" alt="" />
                 <img src="/images/anh9.jpg" alt="" />
               </article>
-              <article className="md:hidden grid grid-rows-3   grid-flow-col gap-4 " data-aos="zoom-in-up">
+              <article className="lg:hidden grid grid-rows-3   grid-flow-col gap-4 " data-aos="zoom-in-up">
                 <img src="/images/anh7.jpg" className="col-span-4  " alt="" />
                 <img src="/images/anh1.jpg" alt="" />
                 <img src="/images/anh4.jpg" alt="" />
@@ -113,7 +113,7 @@ function Home() {
                 <img src="/images/anh8.jpg" alt="" />
                 <img src="/images/anh9.jpg" alt="" />
               </article>
-              <div className="md:hidden " data-aos="zoom-in-up">
+              <div className="lg:hidden !max-w-[360px]" data-aos="zoom-in-up">
                 {/* <img src="/images/anh7.jpg" className="col-span-4  " alt="" />
               <img src="/images/anh1.jpg" alt="" />
               <img src="/images/anh4.jpg" alt="" />
@@ -126,9 +126,9 @@ function Home() {
               </div>
             </>
           )}
-          <div className="flex h-full items-center pt-[24px] flex-col space-y-4 text-[#870608] md:pt-0  mx-[20px]">
+          <div className="flex h-full items-center pt-[24px] flex-col space-y-4 text-[#870608] lg:pt-0  mx-[20px]">
             <span
-              className="md:text-[32px] text-[24px] text-center tracking-widest"
+              className="lg:text-[32px] text-[16px] text-center tracking-widest"
               data-aos="fade-up"
               data-aos-delay="500"
               data-aos-offset="0"
@@ -136,7 +136,7 @@ function Home() {
               Lê Văn Hải & Vương Ngọc Ánh
             </span>
             <span
-              className="tmd:text-[48px] text-[32px] text-center"
+              className="tlg:text-[48px] text-[32px] text-center"
               data-aos="fade-up"
               data-aos-delay="1000"
               data-aos-offset="0"
@@ -147,7 +147,7 @@ function Home() {
         </div>
       </section>
       {/* <section className={styles.invitation}>
-        <div className=" md:p-[90px_100px_100px] p-[40px_20px_10px]">
+        <div className=" lg:p-[90px_100px_100px] p-[40px_20px_10px]">
           <TemplateCard>
             <Invitation />
           </TemplateCard>
@@ -157,7 +157,7 @@ function Home() {
         <Banner />
       </section>
       <section className="w-full flex items-center justify-center mt-[150px]">
-        <div className="md:w-[80%] w-full h-full">
+        <div className="lg:w-[80%] w-full h-full">
           <TemplateCard>
             <Invitation />
           </TemplateCard>

@@ -64,35 +64,35 @@ function Invitation() {
 
   return (
     <div className="w-full  min-h-screen flex flex-col items-center mb-[100px]">
-      <div className="md:w-[70%] w-[80%] space-y-[40px] flex flex-col md:px-[20px] justify-center flex-1 h-full">
+      <div className="lg:w-[70%] w-[80%] space-y-[40px] flex flex-col lg:px-[20px] justify-center flex-1 h-full">
         <div
-          className="px-[24px] py-[18px] md:text-[18px] text-[14px] text-center border-2 border-[#870608] text-[#870608]"
+          className="px-[24px] py-[18px] lg:text-[18px] text-[14px] text-center border-2 border-[#870608] text-[#870608]"
           data-aos="fade-up"
         >
           Đám cưới của chúng tôi sẽ trọn vẹn hơn khi có thêm lời chúc phúc và sự hiện diện của các bạn. Xin hãy xác nhận
           sự có mặt của mình để chúng tôi chuẩn bị đón tiếp một cách chu đáo nhất nhé! Trân trọng!
         </div>
         <div className="flex flex-col" data-aos="fade-up">
-          <span className="text-[#870608] font-normal md:text-[24px] text-[16px]">Tên của bạn</span>
+          <span className="text-[#870608] font-normal lg:text-[24px] text-[16px]">Tên của bạn</span>
           <input onChange={(e) => setForm((prev) => ({ ...prev, name: e.target.value }))} value={form.name} />
         </div>
         <div className="flex flex-col" data-aos="fade-up">
-          <span className="text-[#870608] font-normal md:text-[24px] text-[16px]">Số điện thoại</span>
+          <span className="text-[#870608] font-normal lg:text-[24px] text-[16px]">Số điện thoại</span>
           <input onChange={(e) => setForm((prev) => ({ ...prev, std: e.target.value }))} />
         </div>
 
         <div className="flex flex-col items-center w-full ">
-          <span className="md:text-[30px] text-[21px] underline underline-offset-8 text-[#870608]" data-aos="fade-up">
+          <span className="lg:text-[30px] text-[21px] underline underline-offset-8 text-[#870608]" data-aos="fade-up">
             Bạn sẽ đến chứ?
           </span>
-          <div className="flex w-full justify-between md:px-[40px] pt-[20px]" data-aos="fade-up">
+          <div className="flex w-full justify-between lg:px-[40px] pt-[20px]" data-aos="fade-up">
             <div className="flex  items-center space-x-5 ">
               <input
                 type="radio"
                 checked={form.appect}
                 onChange={() => setForm((prev) => ({ ...prev, appect: !prev.appect }))}
               />
-              <span className="text-[#870608] font-normal md:text-[24px] text-[14px]">Có</span>
+              <span className="text-[#870608] font-normal lg:text-[24px] text-[14px]">Có</span>
             </div>
             <div className="flex  items-center space-x-5">
               <input
@@ -100,7 +100,7 @@ function Invitation() {
                 checked={!form.appect}
                 onChange={() => setForm((prev) => ({ ...prev, appect: !prev.appect }))}
               />
-              <span className="text-[#870608] font-normal md:text-[24px] text-[14px]">Không</span>
+              <span className="text-[#870608] font-normal lg:text-[24px] text-[14px]">Không</span>
             </div>
           </div>
         </div>
