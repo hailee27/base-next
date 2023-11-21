@@ -63,7 +63,7 @@ function Invitation() {
   }, [router?.query?.khach]);
 
   return (
-    <div className="w-full  min-h-screen flex flex-col items-center ">
+    <div className="w-full  min-h-screen flex flex-col items-center mb-[100px]">
       <div className="md:w-[70%] w-[80%] space-y-[40px] flex flex-col md:px-[20px] justify-center flex-1 h-full">
         <div
           className="px-[24px] py-[18px] md:text-[18px] text-[14px] text-center border-2 border-[#870608] text-[#870608]"
@@ -92,7 +92,7 @@ function Invitation() {
                 checked={form.appect}
                 onChange={() => setForm((prev) => ({ ...prev, appect: !prev.appect }))}
               />
-              <span className="text-[#870608] font-normal text-[24px]">Có</span>
+              <span className="text-[#870608] font-normal md:text-[24px] text-[14px]">Có</span>
             </div>
             <div className="flex  items-center space-x-5">
               <input
@@ -100,7 +100,7 @@ function Invitation() {
                 checked={!form.appect}
                 onChange={() => setForm((prev) => ({ ...prev, appect: !prev.appect }))}
               />
-              <span className="text-[#870608] font-normal text-[24px]">Không</span>
+              <span className="text-[#870608] font-normal md:text-[24px] text-[14px]">Không</span>
             </div>
           </div>
         </div>

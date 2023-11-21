@@ -10,7 +10,7 @@ function Banner() {
   return (
     <div className=" w-full min-h-screen h-full md:px-[100px] pc:px-0 relative ">
       <div className="absolute flex-col font-lexendDeca z-10 text-[#870608] w-full flex items-center  md:w-[80%] left-[50%] -translate-x-[50%]  h-full">
-        <div className="w-full h-full flex items-center justify-between flex-col space-y-[80px]">
+        <div className="w-full h-full flex items-center justify-between flex-col space-y-[80px] px-[24px]">
           <div
             data-aos="fade-up"
             className=" font-normal md:text-[38px] flex flex-col items-center  text-center md:pt-[120px] pt-[100px]"
