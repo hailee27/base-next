@@ -156,7 +156,7 @@ function Home() {
       <section className={styles.invitation}>
         <Banner />
       </section>
-      <section className="w-full flex items-center justify-center mt-[150px]">
+      <section className="w-full flex items-center justify-center pt-[150px]">
         <div className="lg:w-[80%] w-full h-full">
           <TemplateCard>
             <Invitation />
