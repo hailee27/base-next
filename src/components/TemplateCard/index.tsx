@@ -4,7 +4,7 @@ import styles from './index.module.scss';
 
 function TemplateCard({ children }: { children: React.ReactNode }) {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen h-[750px]">
       <div className={styles.topLeft}>
         <div className="relative lg:w-[150px] lg:h-[150px] w-[100px] h-[100px] ">
           <Image alt="icon" fill={true} src="/images/shape.png" />

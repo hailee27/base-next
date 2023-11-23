@@ -63,8 +63,8 @@ function Invitation() {
   }, [router?.query?.khach]);
 
   return (
-    <div className="w-full  min-h-screen flex flex-col items-center mb-[100px]">
-      <div className="lg:w-[70%] w-[80%] space-y-[40px] flex flex-col lg:px-[20px] justify-center flex-1 h-full">
+    <div className="w-full  min-h-screen  flex flex-col items-center justify-center h-full ">
+      <div className="lg:w-[70%] w-[80%] items-center space-y-[40px] flex flex-col lg:px-[20px] justify-center flex-1 h-full">
         <div
           className="px-[24px] py-[18px] lg:text-[18px] text-[14px] text-center border-2 border-[#870608] text-[#870608]"
           data-aos="fade-up"
@@ -72,11 +72,11 @@ function Invitation() {
           Đám cưới của chúng tôi sẽ trọn vẹn hơn khi có thêm lời chúc phúc và sự hiện diện của các bạn. Xin hãy xác nhận
           sự có mặt của mình để chúng tôi chuẩn bị đón tiếp một cách chu đáo nhất nhé! Trân trọng!
         </div>
-        <div className="flex flex-col" data-aos="fade-up">
+        <div className="flex flex-col w-full" data-aos="fade-up">
           <span className="text-[#870608] font-normal lg:text-[24px] text-[16px]">Tên của bạn</span>
           <input onChange={(e) => setForm((prev) => ({ ...prev, name: e.target.value }))} value={form.name} />
         </div>
-        <div className="flex flex-col" data-aos="fade-up">
+        <div className="flex flex-col w-full" data-aos="fade-up">
           <span className="text-[#870608] font-normal lg:text-[24px] text-[16px]">Số điện thoại</span>
           <input onChange={(e) => setForm((prev) => ({ ...prev, std: e.target.value }))} />
         </div>
@@ -104,15 +104,14 @@ function Invitation() {
             </div>
           </div>
         </div>
+        <button
+          data-aos="fade-up"
+          onClick={() => handleSubmit()}
+          className="bg-[#870608] text-white px-[60px] w-[200px] py-[25px] rounded-lg"
+        >
+          Gửi
+        </button>
       </div>
-      <button
-        data-aos="fade-up"
-        onClick={() => handleSubmit()}
-        className="bg-[#870608] text-white px-[60px] py-[25px] rounded-lg"
-      >
-        Gửi
-      </button>
-      <div className="flex-1"></div>
     </div>
   );
 }

@@ -3,9 +3,10 @@
   width: 100vw;
   min-height: 100vh;
   background-image: url('/images/paper-texture-mb.png');
+  padding: 24px 0 100px 0;
 }
 .header {
-  max-height: 100vh;
+  max-height: 1000px;
   min-height: 100vh;
   width: 100vw;
 
@@ -61,6 +62,7 @@
 }
 .invitation {
   min-height: 100vh;
+  max-height: 1000px;
 }
 @media (max-width: 768px) {
 }
@@ -68,6 +70,7 @@
 .invitation,
 .location {
   width: 100vw;
+  max-height: 800px;
 }
 @media (min-width: 768px) {
   .location {
