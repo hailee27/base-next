@@ -54,7 +54,7 @@ function Banner() {
               VÀO LÚC 17 GIỜ 30, THỨ SÁU
               <div className="lg:text-[60px] text-[40px]" data-aos="fade-up">
                 {' '}
-                01 . 12 . 2022
+                01 . 12 . 2023
               </div>
               <span className="xl:text-[32px] text-[12px]" data-aos="fade-up">
                 (NHÂM NGÀY 19 THÁNG 10 NĂM QUÝ MÃO)
