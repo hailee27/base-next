@@ -16,7 +16,7 @@ function Banner() {
             className=" font-normal lg:text-[38px] flex flex-col items-center  text-center lg:pt-[120px] pt-[180px]"
           >
             <span className="lg:text-[28px] text-[20px]">Trân trọng kính mời</span>
-            <span className="text-[30px]  pt-[30px]"> {router?.query?.khach} </span>
+            <span className="text-[26px]  py-[16px]"> {router?.query?.khach} </span>
           </div>
 
           <div
