@@ -141,7 +141,7 @@ function Home() {
               data-aos-delay="1000"
               data-aos-offset="0"
             >
-              01 . 12 . 2022
+              01 . 12 . 2023
             </span>
           </div>
         </div>
